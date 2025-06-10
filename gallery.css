@@ -1,0 +1,233 @@
+body{
+    background-image: url(./images/background2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+}
+.main{
+    background-color: white;
+    height: 550px;
+    width: 850px;
+    position: absolute;
+    top: 30px;
+    left: 200px ;
+}
+
+img{
+    position: relative;
+    bottom: 100px;
+    height: 15px;
+    margin: 0;
+}
+
+.text{
+    color: #5A827E;
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 180px;
+  margin: 0;
+
+
+}
+.social{
+    background-color: white;
+    height: 200px;
+    width: 200px;
+    
+    display: inline-block;
+    position: absolute;
+    top: 50px;
+    left: 60px;
+    background-color: #FFDCDC;
+    text-align: center;
+    margin: 0;
+
+    background-image: url(./images/gallery_background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+     /* animation: slideInLeft 1s ease-out forwards; */
+     animation: fadein 2s ease-in-out ;
+
+}
+
+.photo1{
+    background-color: white;
+    height: 200px;
+    width: 200px;
+    
+    display: inline-block;
+    position: absolute;
+    top: 50px;
+    left: 310px;
+    background-color: #FFDCDC;
+
+    background-image: url(./images/photo1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* animation: slideInRight 1s ease-out 0.2s forwards; */
+    animation: fadein 2s ease-in-out  ;
+}
+
+.photo2{
+    background-color: white;
+    height: 200px;
+    width: 200px;
+    
+    display: inline-block;
+    position: absolute;
+    top: 50px;
+    left: 560px;
+    background-color: #FFDCDC;
+
+    background-image: url(./images/photo2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+     /* animation: slideInRight 1s ease-out 0.4s forwards; */
+     animation: fadein 2s ease-in-out  ;
+}
+
+.photo3{
+    background-color: white;
+    height: 200px;
+    width: 200px;
+    
+    display: inline-block;
+    position: absolute;
+    top: 290px;
+    left: 60px;
+    background-color: #FFDCDC;
+    text-align: center;
+    margin: 0;
+
+    background-image: url(./images/photo3.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* animation: slideInLeft 1s ease-out 0.6s forwards; */
+    animation: fadein 2s ease-in-out  ;
+}
+
+.photo4{
+
+    background-color: white;
+    height: 200px;
+    width: 200px;
+    
+    display: inline-block;
+    position: absolute;
+    top: 290px;
+    left: 310px;
+    background-color: #FFDCDC;
+
+    background-image: url(./images/photo4.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* animation: slideInLeft 1s ease-out 0.7s forwards; */
+    animation: fadein 2s ease-in-out ;
+}
+
+
+
+
+.about{
+
+    background-color: white;
+    height: 200px;
+    width: 200px;
+    
+    display: inline-block;
+    position: absolute;
+    top: 290px;
+    left: 560px;
+    background-color: #FFDCDC;
+
+    background-image: url(./images/gallery_background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    /* animation: slideInRight 1s ease-out 0.6s forwards; */
+    animation: fadein 2s ease-in-out  ;
+
+
+}
+@keyframes fadein{
+  from{opacity: 0;}
+  to{opacity: 1;}
+}
+
+a{
+  text-decoration: none; /* removes underline */
+  color: inherit; /* makes text same color as surrounding text */
+  cursor: pointer; /* optional: keeps pointer cursor on hover */
+  text-align: center;
+  color: #5A827E;
+  font-size: 2rem;
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+}
+@media screen and (max-width: 768px) {
+
+    body{
+      height: auto;
+    }
+ 
+
+  .main {
+    width: 80%;
+    height: auto;
+    position: static;
+    margin: 20px auto;
+    padding: 20px;
+  }
+
+  .social,
+  .photo1,
+  .photo2,
+  .photo3,
+  .photo4,
+  .about {
+    position: static;
+    display: block;
+    width: 50%;
+    height: 200px;
+    margin: 10px auto;
+  }
+
+  img {
+    position: static;
+    height: 15px;
+    margin-top: 10px;
+  }
+
+  .text {
+    line-height: normal;
+    margin: 10px 0;
+    position: relative;
+    top: 40%;
+  }
+
+  a {
+    font-size: 1.5rem;
+    margin: 0;
+    line-height: 1.5;
+    position: relative;
+    left: 2px;
+    top: 50px;
+    
+  }
+}
+
+
+
+

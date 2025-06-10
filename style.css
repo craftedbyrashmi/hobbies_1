@@ -1,0 +1,167 @@
+body{
+    background-image: url(./images/background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+
+
+}
+
+.box{
+    background-color: #BE5985;
+    height: 200px;
+    width: 350px;
+    position: absolute;
+    left: 20%;
+    top: 20%;
+    border-radius: 20px;
+    animation: fadein 2s ease-in-out ;
+    background-image: url(./images/crochet2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@keyframes fadein{
+  from{opacity: 0;}
+  to{opacity: 1;}
+}
+
+.box2{
+    background-color: #FFEDFA;
+    height: 200px;
+    width: 350px;
+    position: absolute;
+    left: 45%;
+    top: 50%;
+    padding: 20px;
+    margin: 0;
+    border-radius: 20px;
+    overflow: hidden;
+    animation: fadein 2s ease-in-out  ;
+}
+.title{
+    text-align: center;
+    color: #AC1754;
+    font-family: "Merriweather", serif;
+    font-family: "Alfa Slab One", serif;
+    font-weight: 400;
+    font-style: normal;
+    
+    animation: head 1s ease-out 0.5s reverse;
+
+    
+}
+
+@keyframes head{
+  from{transform: translateY(0);}
+  to{transform: translateY(-100px);}
+}
+
+.intro{
+    text-align: center;
+    color: #6A1E55;
+    font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+    /* font-weight: <weight>;
+    font-style : normal; */
+   overflow: hidden;
+   white-space: nowrap;
+   width: 0;
+   border-right: 2px solid black; 
+   animation: type 3s steps(45,end) forwards ;
+
+}
+@keyframes type{
+  from{width: 0;}
+  to{width: 100%;}
+}
+
+a{
+  text-decoration: none; /* removes underline */
+  color: inherit; /* makes text same color as surrounding text */
+  cursor: pointer; 
+}
+
+.button-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+button {
+  padding: 12px 24px;
+  background-color: #E53888;
+  color: #56021F;
+  border: 1px solid #56021F;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 5px;
+  transition: background-color 0.3s, transform 0.2s;
+  
+}
+
+button:hover {
+  background-color: #FFDCDC;
+  transform: scale(1.05);
+}
+/* For screens less than or equal to 768px (tablets and phones) */
+@media screen and (max-width: 768px) {
+  .main {
+    height: auto;
+  }
+
+  .box, .box2 {
+    position: static;      /* remove absolute positioning */
+    width: 90%;
+    margin: 20px auto;
+    height: 250px;
+  }
+
+  .box2 {
+    padding: 20px;
+    text-align: center;
+    width: 80%;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+
+  .intro {
+    font-size: 18px;
+    animation: fadeSlideUp 1.2s ease forwards;
+    width: 90%;
+    max-width: 500px;
+    white-space: normal; /* allow wrapping since no typing effect */
+    border-right: none; /* remove blinking cursor effect */
+    overflow: visible;
+  }
+
+  @keyframes fadeSlideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+    width: auto; /* no width animation here */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+  .button-container {
+    text-align: center;
+  }
+
+  button {
+    display: block;
+    margin: 10px auto;
+    width: 30%;
+  }
+}
+
+
+

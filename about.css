@@ -1,0 +1,141 @@
+body{
+    background-image: url(./images/about_back3.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+}
+
+/* img{
+    height: 200px;
+    width: 250px;
+    position: absolute;
+    top: 180px;
+    left: 60%;
+} */
+
+.polaroid {
+  position: absolute;
+  top: 180px;
+  left: 60%;
+
+  width: 250px;
+  background-color: white;
+  padding: 15px 15px 35px 15px; /* extra bottom padding for caption */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  border: 5px dotted pink;
+  transform: rotate(-2deg);
+  transition: transform 0.3s ease;
+  text-align: center;
+}
+
+.polaroid:hover {
+  transform: rotate(0deg) scale(1.03);
+}
+
+.polaroid img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+a{
+    text-decoration: none; /* removes underline */
+  color: inherit; /* makes text same color as surrounding text */
+  cursor: pointer; /* optional: keeps pointer cursor on hover */
+  text-align: center;
+}
+.intro,.tagline{
+    margin: 0;
+    font-family: "Edu NSW ACT Hand Pre", cursive;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+.name{
+    margin: 10px;
+    color: #B33791;
+     font-family: "Merriweather", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+.text{
+    position: absolute;
+    top: 220px;
+    left: 30%;
+    text-align: center;
+    
+}
+
+.home{
+    position: absolute;
+    top: 370px;
+    left: 37%;
+}
+
+.gallery{
+     position: absolute;
+    top: 370px;
+    left: 42%;
+}
+
+
+@media screen and (max-width: 768px) {
+  .polaroid {
+    top: 120px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    padding: 10px 10px 25px 10px;
+  }
+
+  .text {
+    top: 350px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+  }
+
+  .home, .gallery {
+    position: static;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+  }
+}
+
+/* 📱💻 Tablet Styles (769px - 1024px) */
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+  .polaroid {
+    left: 55%;
+     animation: slideUpFadeIn 0.8s ease-out forwards;
+  }
+
+  @keyframes slideUpFadeIn {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, 50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+}
+
+  .text {
+    left: 25%;
+  }
+
+  .home {
+    left: 35%;
+  }
+
+  .gallery {
+    left: 45%;
+  }
+}
